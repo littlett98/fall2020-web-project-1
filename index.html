@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Trevor McCubbin  </title>
+		<meta charset="utf-8" />
+        <link type="text/css" rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script defer="defer" src="scripts/main.js"></script>
+	</head>
+    <body>
+        <main>
+            <h1>
+                Trevor's to do list
+            </h1>
+            <form id="submit-form">
+                <p>
+                    <label>New Task:</label>
+                    <input type="text" name="task" required>
+                </p>
+                <p>
+                    <label>Description:</label>
+                    <textarea name="description" id="description" required>Describe the task</textarea>
+                </p>
+                <p>
+                    <label>Importance (0 to 3):</label>
+                    <input type="number" min="0" max="3" step="1" value="0" name="importance">
+                </p>
+                <p id="category">
+                    <label>Choose category:</label>
+                    <input type="radio" id="school" name="category" value="School" required>
+                    <label for="school" class="category_name">School</label>
+                    <input type="radio" id="work" name="category" value="Work">
+                    <label for="work" class="category_name">Work</label>
+                    <input type="radio" id="personal" name="category" value="Personal">
+                    <label for="personal" class="category_name">Personal</label>
+                </p>
+                <input type="submit" value="Post" id="submit-button"/>
+            </form>
+        </main>
+        <!-- <section id="task">
+            <div class="topBarTodo">
+                <h3>Test Title</h3>
+                <div class="starRating">
+                    <span id="rating">
+                        &#9733 &#9734 &#9734
+                    </span>
+                    <input type="checkbox" id="delete" name="delete">
+                </div>
+            </div>
+            <p>Test Description</p>
+        </section> -->
+    </body>
+</html>
